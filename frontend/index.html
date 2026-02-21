@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <h1>Blog Platform</h1>
+    <div id="auth">
+      <input id="email" placeholder="Email" />
+      <input id="password" type="password" placeholder="Password" />
+      <input id="username" placeholder="Username (register only)" />
+      <button onclick="register()">Register</button>
+      <button onclick="login()">Login</button>
+    </div>
+    <div id="create-article" style="display: none">
+      <input id="title" placeholder="Title" style="width: 100%" />
+      <textarea
+        id="body"
+        placeholder="Body"
+        rows="5"
+        style="width: 100%"
+      ></textarea>
+      <button onclick="createArticle()">Publish</button>
+    </div>
+    <hr />
+    <div id="articles"></div>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
