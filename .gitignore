@@ -11,3 +11,4 @@ wheels/
 
 ignore/
 .env
+userdata.sh
