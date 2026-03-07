@@ -4,7 +4,7 @@ load_dotenv()
 
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
-from app.routes import auth, articles, health
+from routes import auth, articles, health
 
 app = FastAPI()
 
